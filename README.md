@@ -3,7 +3,9 @@ Water Surface with Perlin Noise Waves
 
 Two versions: simple mesh and extra vertex mesh (for flat shading effect)
 
-![ScreenShot](https://gfycat.com/WastefulQueasyHamadryas)
+Specular shading:
+![ScreenShot](https://github.com/redahanb/WaveMesh/blob/master/Screenshots/Smooth.gif)
 
-![ScreenShot](https://gfycat.com/FatherlyIllinformedChafer) 
+Flat shading:
+![ScreenShot](https://github.com/redahanb/WaveMesh/blob/master/Screenshots/Flat.gif) 
 
