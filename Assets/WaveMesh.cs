@@ -14,14 +14,19 @@ public class WaveMesh : MonoBehaviour {
 
 	public float waveStrength;
 
+	public bool flatShading = false;
+
 	private Mesh waveMesh;
 	private Vector3[] vertices;
 
 
 	void Awake()
 	{
-		//Generate();
-		Generate2();
+		if (!flatShading) {
+			Generate ();
+		} else {
+			Generate2 ();
+		}
 	}
 
 	void Start () 
@@ -32,8 +37,11 @@ public class WaveMesh : MonoBehaviour {
 
 	void Update () 
 	{
-		//Wave ();
-		Wave2();
+		if (!flatShading) {
+			Wave ();
+		} else {
+			Wave2 ();
+		}
 	}
 
 	// offset the vertices using Perlin Noise to get a wave effect
